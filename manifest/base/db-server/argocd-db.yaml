@@ -64,7 +64,10 @@ spec:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: k8s12345
+              valueFrom:
+              secretKeyRef:
+                name: sealed-db-secret
+                key: DB_PASSWORD              
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysqldata
