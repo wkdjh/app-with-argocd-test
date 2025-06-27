@@ -8,8 +8,8 @@ images:
 
 # patchesStrategicMerg
 #
-patches:
-- path: dev-patch.yaml
+#patches:
+#- path: dev-patch.yaml
 
 namespace: dev
 namePrefix: dev-
