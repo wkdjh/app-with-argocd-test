@@ -1,0 +1,21 @@
+resources:
+- ../../base/db-server
+
+images:
+  - name: nginx
+    newName: nginx
+    newTag: latest
+
+# patchesStrategicMerg
+#
+patches:
+- path: dev-patch.yaml
+
+namespace: dev
+namePrefix: dev-
+
+# configMapGenerator
+configMapGenerator:
+- name: env-vars
+  envs:
+    - dev.env
