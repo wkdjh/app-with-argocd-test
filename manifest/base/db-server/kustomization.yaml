@@ -1,2 +1,2 @@
 resources:
-- api-db.yaml
+- argocd-db.yaml
