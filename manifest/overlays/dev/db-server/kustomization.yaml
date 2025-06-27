@@ -16,6 +16,6 @@ namePrefix: dev-
 
 # configMapGenerator
 configMapGenerator:
-- name: env-vars
+- name: env-vars-db
   envs:
     - dev.env
