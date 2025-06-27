@@ -17,6 +17,6 @@ namePrefix: dev-
 
 # configMapGenerator
 configMapGenerator:
-- name: env-vars        # base에 지정된 configMap의 이름
+- name: env-vars        
   envs:
     - dev.env
