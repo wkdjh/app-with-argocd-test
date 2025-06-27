@@ -1,0 +1,22 @@
+resources:
+- ../../base
+
+images:
+  - name: nginx
+    newName: nginx
+    newTag: "1.25"
+
+ #patchesStrategicMerge:
+ #- dev-patch.yaml
+
+patches:
+- path: dev-patch.yaml
+
+namespace: dev
+namePrefix: dev-
+
+# configMapGenerator
+configMapGenerator:
+- name: env-vars        # base에 지정된 configMap의 이름
+  envs:
+    - dev.env
