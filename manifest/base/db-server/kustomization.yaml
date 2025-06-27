@@ -1,2 +1,3 @@
 resources:
 - argocd-db.yaml
+- sealed-secret.yaml
