@@ -1,5 +1,5 @@
 resources:
-- ../../base/api-server
+- ../../../base/api-server
 
 images:
   - name: nginx
